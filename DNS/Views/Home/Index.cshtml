@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model List<string>
+
+<body>
+    <table  border="1">
+        <tr>
+            <th>Имя</th>
+        </tr>
+        @foreach (String country in Model)
+        {
+            <tr>
+                <td>@country</td>
+            </tr>
+        }
+    </table>
+</body>
